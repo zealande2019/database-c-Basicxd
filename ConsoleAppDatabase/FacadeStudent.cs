@@ -78,7 +78,7 @@ namespace ConsoleAppDatabase
 
         public static void DeleteExam(int ExamId)
         {
-            string sql = "DELETE FROM Exam WHERE ExamId='@ExamId'";
+            string sql = "DELETE FROM Exam WHERE ExamId= @ExamId ";
             using (var databaseConnection = new SqlConnection(conn))
             {
                 databaseConnection.Open();

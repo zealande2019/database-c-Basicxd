@@ -25,9 +25,20 @@ namespace ConsoleAppDatabase
                 Console.WriteLine($"{mi.ExamId}");
             }
 
+            FacadeStudent.DeleteExam(36);
+
+
+            foreach (var mi in listExams)
+            {
+                Console.WriteLine($"{mi.ExamId}");
+            }
+
             Console.ReadLine();
 
             Console.WriteLine("-----------------------");
+
+            
+
 
 
 
